@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de Foto com Moldura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="frame-container">
+            <canvas id="photoCanvas" class="canvas"></canvas>
+            <img id="frameImage" src="/frame.png" alt="Frame" class="frame">
+        </div>
+
+        <div class="controls-container">
+            <input type="file" id="imageUpload" accept="image/*" class="upload-btn">
+            <button id="rotateLeftBtn" class="control-btn">Girar Esquerda</button>
+            <button id="rotateRightBtn" class="control-btn">Girar Direita</button>
+            <button id="downloadBtn" class="control-btn">Baixar Imagem</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
